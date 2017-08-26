@@ -8,4 +8,3 @@ Timetabling is a difficult combinatorial optimization problem mainly because the
 #### Keywords: ####
 
 timetabling, combinatorial optimization problem, computational complexity, constraint satisfaction, iterated local search, neighbourhood operators
-
