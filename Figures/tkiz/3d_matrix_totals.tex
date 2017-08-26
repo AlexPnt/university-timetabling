@@ -1,0 +1,68 @@
+\documentclass{standalone}
+\usepackage{geometry}
+\usepackage{tikz}
+\usepackage[active,tightpage]{preview}
+\PreviewEnvironment{tikzpicture}
+\setlength{\PreviewBorder}{5mm}
+
+\begin{document}
+
+ \begin{tikzpicture}
+       \node (a) at (0,0)
+         {
+            \begin{tikzpicture}
+              	\foreach \x in{0,...,4}
+				{   \draw[thick] (0,\x ,4) -- (4,\x ,4);
+					\draw[thick] (\x ,0,4) -- (\x ,4,4);
+					\draw[thick] (4,\x ,4) -- (4,\x ,0);
+					\draw[thick] (\x ,4,4) -- (\x ,4,0);
+					\draw[thick] (4,0,\x ) -- (4,4,\x );
+					\draw[thick] (0,4,\x ) -- (4,4,\x );
+				}
+				\draw[thick,<->](-1,-2) -- (2,-2);
+				\draw[thick,<->](3,-1.5) -- (4,-0.5);
+				\draw[thick,<->](4.5,0.5) -- (4.5,3.5);
+
+				\draw (0.5,-2.5) node {Days};
+				\draw (4.7,-1) node {Subjects};
+				\draw (5.5,2) node {Turns};
+            \end{tikzpicture}
+         };
+        \node (b) at (a.west) [xshift=-1cm]
+         {
+           		\begin{tikzpicture}
+					\foreach \x in{0,...,4}
+					{   
+		
+						\draw[thick] (4,\x ,4) -- (4,\x ,0);
+						\draw[thick] (4,0,\x ) -- (4,4,\x );
+
+					}
+
+
+					\draw (2.65,-0.85) node {3};
+					\draw (2.65,0.2) node {0};
+					\draw (2.65,1.2) node {1};
+					\draw (2.65,2.2) node {2};
+
+					\draw (3.05,-0.5) node {0};
+					\draw (3.05,0.5) node {4};
+					\draw (3.05,1.5) node {0};
+					\draw (3.05,2.5) node {1};
+
+					\draw (3.425,-0.1) node {3};
+					\draw (3.425,0.9) node {3};
+					\draw (3.425,1.9) node {1};
+					\draw (3.425,2.9) node {1};
+
+					\draw (3.8,0.25) node {0};
+					\draw (3.8,1.25) node {3};
+					\draw (3.8,2.25) node {0};
+					\draw (3.8,3.25) node {2};
+
+
+				\end{tikzpicture}
+         };
+       \draw [<->] (a)--(b);
+\end{tikzpicture}
+\end{document}

@@ -1,0 +1,117 @@
+\begin{tikzpicture}
+%fill
+\draw [fill=cyan] (0,0) rectangle (7,5);
+\draw [fill=green] (7,0) rectangle (14,5);
+
+  %vertical lines
+  \draw[ultra thick] (0,0) -- (0,5);
+  \draw(0.5,0) -- (0.5,5);
+  \draw (1,0) -- (1,5);
+  \draw (1.5,0) -- (1.5,5);
+  \draw (2,0) -- (2,5);
+  \draw (2.5,0) -- (2.5,5);
+  \draw (3,0) -- (3,5);
+  \draw (3.5,0) -- (3.5,5);
+  \draw (4,0) -- (4,5);
+  \draw (4.5,0) -- (4.5,5);
+  \draw (5,0) -- (5,5);
+  \draw (5.5,0) -- (5.5,5);
+  \draw (6,0) -- (6,5);
+  \draw (6.5,0) -- (6.5,5);
+  \draw [ultra thick](7,0) -- (7,5);
+\draw (7.5,0) -- (7.5,5);
+\draw (8,0) -- (8,5);
+\draw (8.5,0) -- (8.5,5);
+\draw (9,0) -- (9,5);
+\draw (9.5,0) -- (9.5,5);
+\draw (10,0) -- (10,5);
+\draw (10.5,0) -- (10.5,5);
+\draw (11,0) -- (11,5);
+\draw (11.5,0) -- (11.5,5);
+\draw (12,0) -- (12,5);
+\draw (12.5,0) -- (12.5,5);
+\draw (13,0) -- (13,5);
+\draw (13.5,0) -- (13.5,5);
+\draw[ultra thick]  (14,0) -- (14,5);
+
+
+
+%horizontal lines
+\draw[ultra thick] (0,0) -- (14,0);
+\draw (0,1) -- (14,1);
+\draw (0,2) -- (14,2);
+\draw (0,3) -- (14,3);
+\draw (0,4) -- (14,4);
+\draw[ultra thick] (0,5) -- (14,5);
+\draw (0,0.5) -- (14,0.5);
+\draw (0,1.5) -- (14,1.5);
+\draw (0,2.5) -- (14,2.5);
+\draw(0,3.5) -- (14,3.5);
+\draw (0,4.5) -- (14,4.5);
+
+%arrows
+\draw [<->] (0,5.5) -- (14,5.5);
+\draw [<->] (-0.5,5) -- (-0.5,0);
+
+%labels
+\node at (-1.5,2.5) {Rooms};
+\node at (7,6) {Timeslots};
+
+%event ids
+\node[font=\bfseries,scale=.8] at (5.75,4.25) {0};
+\node[font=\bfseries,scale=.8] at (3.25,3.25) {1};
+\node[font=\bfseries,scale=.8] at (1.75,1.25) {2};
+\node[font=\bfseries,scale=.8] at (5.25,2.25) {3};
+\node[font=\bfseries,scale=.8] at (9.25,1.25) {4};
+\node[font=\bfseries,scale=.8] at (1.25,3.75) {5};
+\node[font=\bfseries,scale=.8] at (12.25,3.25) {6};
+\node[font=\bfseries,scale=.8] at (4.25,4.25) {7};
+\node[font=\bfseries,scale=.8] at (8.25,3.75) {8};
+\node[font=\bfseries,scale=.8] at (8.75,3.75) {8};
+\node[font=\bfseries,scale=.8] at (13.25,1.75) {9};
+\node[font=\bfseries,scale=.8] at (5.75,0.75) {10};
+
+%timeslots ids
+\node[scale=.8] at (0.25,5.25) {0};
+\node[scale=.8] at (0.75,5.25) {1};
+\node[scale=.8] at (1.25,5.25) {2};
+\node[scale=.8] at (1.75,5.25) {3};
+\node[scale=.8] at (2.25,5.25) {4};
+\node[scale=.8] at (2.75,5.25) {5};
+\node[scale=.8] at (3.25,5.25) {6};
+\node[scale=.8] at (3.75,5.25) {7};
+\node[scale=.8] at (4.25,5.25) {8};
+\node[scale=.8] at (4.75,5.25) {9};
+\node[scale=.8] at (5.25,5.25) {10};
+\node[scale=.8] at (5.75,5.25) {11};
+\node[scale=.8] at (6.25,5.25) {12};
+\node[scale=.8] at (6.75,5.25) {13};
+\node[scale=.8] at (7.25,5.25) {14};
+\node[scale=.8] at (7.75,5.25) {15};
+\node[scale=.8] at (8.25,5.25) {16};
+\node[scale=.8] at (8.75,5.25) {17};
+\node[scale=.8] at (9.25,5.25) {18};
+\node[scale=.8] at (9.75,5.25) {19};
+\node[scale=.8] at (10.25,5.25) {20};
+\node[scale=.8] at (10.75,5.25) {21};
+\node[scale=.8] at (11.25,5.25) {22};
+\node[scale=.8] at (11.75,5.25) {23};
+\node[scale=.8] at (12.25,5.25) {24};
+\node[scale=.8] at (12.75,5.25) {25};
+\node[scale=.8] at (13.25,5.25) {26};
+\node[scale=.8] at (13.75,5.25) {27};
+
+%rooms ids
+\node[scale=.8] at (-0.25,4.75) {0};
+\node[scale=.8] at (-0.25,4.25) {1};
+\node[scale=.8] at (-0.25,3.75) {2};
+\node[scale=.8] at (-0.25,3.25) {3};
+\node[scale=.8] at (-0.25,2.75) {4};
+\node[scale=.8] at (-0.25,2.25) {5};
+\node[scale=.8] at (-0.25,1.75) {6};
+\node[scale=.8] at (-0.25,1.25) {7};
+\node[scale=.8] at (-0.25,0.75) {8};
+\node[scale=.8] at (-0.25,0.25) {9};
+
+\end{tikzpicture}
+

@@ -1,0 +1,26 @@
+% Chapter 1
+
+\chapter{Introduction} % Main chapter title
+%\epigraph{If you can't explain it simply, you don't understand it well enough.}{Albert Einstein}
+
+\label{intro} % For referencing the chapter elsewhere, use \ref{Chapter1} 
+
+\lhead{Chapter 1. \emph{Introduction}} % This is for the header on each page - perhaps a shortened title
+
+This chapter provides a quick overview of the theme, its importance and the motivation for this work.
+%----------------------------------------------------------------------------------------
+
+\section{Motivation}
+
+Timetabling is an activity that is constantly present in our daily lives and contributes to a better organized society. The process of automated timetabling can be applied to many areas such as transportation, education (school, class or examination timetabling), work (employee timetabling), health services, sports, etc. In other words, this process is attached to any activity that needs to schedule a set of events, usually specifying meetings where people should meet at a given place and time. This work focus on university class timetabling, i.e., the scheduling of a set of classes, teachers, rooms and students at a fixed number of time slots.\\ 
+Due to the relevance of timetabling in our society, it is very important not only to achieve valid methods of constructing timetables but also methods that produce timetables of good quality. Usually, the amount of existing resources (rooms, time slots, people, etc.) is limited. Therefore, this is a very challenging problem since the resulting timetables must respect a given set of desirable objectives like space usage and a large variety of user preferences. \\
+The manual process of constructing a timetable is a very tedious and laborious activity, since it involves many person-days of work or even weeks to produce a satisfactory timetable, requiring a great investment of time and concentration. Besides, there is normally a single opportunity to make it right, with the possibility of making minor modifications at the end and thus, the option of trying alternative scenarios is reduced greatly. In most of the cases, the resulting solutions have poor quality in terms of resource allocation or faculty satisfaction.\\ The satisfaction of a timetable is usually given by the number of requirements it meets. These requirements usually fall into one of the following categories \citep{syllabus}:
+\begin{itemize}
+	\item Educational - Usually, it is not desirable for students to have large contiguous blocks of classes from the same or related subjects (e.g.: Mathematical Analysis right after Analytical Geometry or Japanese right after a German class.) 
+	\item Work conditions of the staff - For example, the teacher and student loads should be distributed through the day and through the week, i.e., there should be a number of free periods in order to distribute the load evenly.
+	\item Political reasons - Certain teachers may be working on part-time and therefore are only available in certain times, or may have other commitments like research projects.
+\end{itemize} 
+
+Timetabling is 10\% theory and 90\% politics \citep{waterloo}. Usually, the objectives that a timetable must or should meet are very diverse, specific to the institution where they are being applied and sometimes some of them conflict with each other. Therefore, some  trade-offs have always to be considered.\\
+The timetabling problem is a very well-known combinatorial optimization problem in Computer Science. This means that the objective is to find the best assignment (according to the imposed constraints and user preferences) of values to variables, which in our case means choosing a time slot and a room to each event that needs to be scheduled. The complexity of the problem is related to the number of events that are needed to be scheduled and the objectives that must satisfy. In fact, this problem belongs to the class of NP-complete problems \citep{Garey_Johnson_1979}, which means that the problem is so difficult that currently all known algorithms need an exponential amount of time to discover the best solution, i.e., there is not yet a known algorithm that can solve the problem in a polynomial time. Given the nature of the problem, approximation algorithms are usually preferred to exact algorithms. Besides, the number of constraints in this problem varies from one institution to another. \\
+One of the first works about this problem dates from the sixties by Gotlieb \citep{gotlieb1963}, in which he formulated a class-teacher problem. Since then, this has been a very active area and there are international competitions and special interest groups around the subject.
